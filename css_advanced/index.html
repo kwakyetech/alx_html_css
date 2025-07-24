@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="https://fakeimg.pl/250x250?text=Sample+Logo" alt="logo">
-          
+        <nav class="nav">
+            <a href="#"><img src="images/logo.svg" alt="logo"></a>
             <ul>
-                <li><a href="#">COURSE</a></li>
+                <li><a href="#">COURSES</a></li>
                 <li><a href="#">PRICING</a></li>
                 <li><a href="#">LOGIN</a></li>
             </ul>
@@ -21,36 +23,38 @@
         
     </header>
     <main>
-        <section>
-            <div>
+        <section class="hero">
+            <div class="hero_heading">
                 <h1>Get schooled</h1>
-                <span>SMILES</span>
-                <span>GRIN</span>
-                <span>LAUGH</span>
+                <div class="hero_subheading">
+                    <span>SMILE</span>
+                    <span>LAUGH</span>
+                    <span>GRIN</span>
+                </div>
                 <button>REGISTER FOR FREE</button>
             </div>
-            <div>
-                <h2>Learn from the pros</h2>
-                <div>
-                    <div>
-                        <img src="./images/1 (3).png" alt="">
+            <div class="testimonial">
+                <h2><span id="learn">Learn</span>from the pros</h2>
+                <div class="container">
+                    <div class="card">
+                        <img src="./images/img 3.png" alt="">
                         <h3>Phillip Massey</h3>
-                        <p>« Smile of the year » 2018 - 2019</p>
+                        <p>« Smile of the year » <br> 2018 - 2019</p>
                     </div>
-                    <div>
-                        <img src="./images/6.png" alt="">
+                    <div class="card">
+                        <img src="./images/img 2.png" alt="">
                         <h3>Nannie Lawrence</h3>
-                        <p>Best « little smile » 2017</p>
+                        <p>Best « little smile » <br> 2017</p>
                     </div>  
-                    <div>
-                        <img src="./images/7.png" alt="">
+                    <div class="card">
+                        <img src="./images/img 1.png" alt="">
                         <h3>Bruce Walters</h3>
-                        <p>Best « Friend Smile » live performance 2019</p>
+                        <p>Best « Friend Smile » <br> live performance 2019</p>
                     </div>
-                    <div>
-                        <img src="./images/8.png" alt="">
+                    <div class="card">
+                        <img src="./images/img 4.png" alt="">
                         <h3>Henry Hughes</h3>
-                        <p>« 24h smiles » winner 2016 - 2019</p>
+                        <p>« 24h smiles » winner <br> 2016 - 2019</p>
                     </div>
                 </div>
             </div>
