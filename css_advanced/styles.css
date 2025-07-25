@@ -310,3 +310,59 @@ main > section:nth-of-type(3) h4 {
   align-items: center;
   gap: 1rem;
 }
+
+/* === Free Membership === */
+main > section:nth-of-type(4) {
+  background: #071629;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+main > section:nth-of-type(4) > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+main > section:nth-of-type(4) h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-weight: 200;
+}
+
+main > section:nth-of-type(4) h3 {
+  margin: 1rem 0;
+}
+
+main > section:nth-of-type(4) p {
+  font-size: 0.9rem;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+main > section:nth-of-type(4) button {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background: #C271FF; 
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+main > section:nth-child(4) > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section:nth-child(4) > h2 > span {
+  color: #C271FF;
+  font-weight: 700;
+}
