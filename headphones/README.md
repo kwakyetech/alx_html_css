@@ -20,7 +20,7 @@ This project is a demonstration of my ability to translate a professional UI/UX 
 
 The original design was provided by Nicolas Philippot, a talented UI/UX designer. You can view the final screens via the following:
 
-- [Figma Project File](https://www.figma.com/file/0vYKDHLT8k2ZtMZqVw13kS/Headphones?type=design&node-id=2-2&mode=design&t=ahbH6EqkgJxCO1UJ-0)
+- [Figma Project File](https://www.figma.com/design/JG8XFcqCozc0K6jSPW9k3J/a5366bbd595c643993665e2a28909370a7e12c66?node-id=0-1&p=f&m=dev)
 
 To access the file:
 - Create a Figma account (if you haven’t already)
