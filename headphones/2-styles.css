@@ -69,6 +69,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
+
 /* ===== HERO SECTION ===== */
 .hero {
     background: url('assets/images/headphones_hero_1.jpg') no-repeat center/cover;
@@ -124,6 +125,8 @@ html, body {
     justify-content: space-between;
     padding: 0.5rem 0;
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .hamburger {
@@ -160,6 +163,8 @@ html, body {
 .what-we-do {
     padding: 80px 5%;
     color: var(--dark-bg);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .what-we-do div{
     text-align: center;
@@ -222,6 +227,11 @@ html, body {
     padding: 3rem 2rem;
     height: auto;
     margin: 0 auto;
+}
+
+.our-result-container{
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .our-result p{
