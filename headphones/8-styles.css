@@ -75,7 +75,7 @@ html, body {
     background: url('assets/images/headphones_hero_1.jpg') no-repeat center/cover;
     color: var(--light-bg);
     text-align: center;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     height: auto;
 
 }
@@ -470,7 +470,7 @@ footer{
     /* Hero text adjustments */
     .hero h1 {
         font-size: 1.8rem;
-        padding-top: 100px;
+        padding-top: 150px;
     }
 
     .hero p {
@@ -520,6 +520,68 @@ footer{
         text-align: center;
         flex-direction: column;
         gap: 5px;
+    }
+}
+
+
+
+/* === Fun Animations for "What we do" features === */
+
+/* Continuous floating animation for all items */
+.features article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Hover scaling & slight rotation */
+.features article:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* === Fun Animations for "Our Results" stats === */
+.stat-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: popIn 1s ease forwards;
+    opacity: 0.5;
+}
+
+/* Pop-in effect when page loads */
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Bouncy hover effect for stats */
+.stat-item:hover {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(5px);
     }
 }
 
