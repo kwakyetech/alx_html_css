@@ -75,7 +75,7 @@ html, body {
     background: url('assets/images/headphones_hero_1.jpg') no-repeat center/cover;
     color: var(--light-bg);
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 0 1rem;
     height: auto;
 
 }
@@ -161,10 +161,10 @@ html, body {
 /* ===== WHAT WE DO ===== */
 
 .what-we-do {
-    padding: 80px 5%;
     color: var(--dark-bg);
     max-width: 1000px;
     margin: 0 auto;
+    
 }
 .what-we-do div{
     text-align: center;
@@ -182,13 +182,14 @@ html, body {
     max-width: 800px;
     margin: 0 auto 60px;
     text-align: center;
+    padding: 1rem 2rem;
 }
 
 .features {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 58px;
+    gap: 28px;
     padding: 40px 0;
 }
 
@@ -197,7 +198,6 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
 }
 
 .features article span {
@@ -224,14 +224,13 @@ html, body {
     background: url('assets/images/headphones_hero_2.jpg') no-repeat center/cover;
     color: var(--light-bg);
     text-align: center;
-    padding: 3rem 2rem;
-    height: auto;
     margin: 0 auto;
+    padding: 3rem 2rem;
 }
 
 .our-result-container{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: var(--max-width);
 }
 
 .our-result p{
@@ -244,22 +243,22 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
-    margin-top: 2rem;
     justify-items: center;
+    max-width: var(--max-width);
+    margin: 2rem auto 0;
 
 }
 
 .stat-item {
     margin-top: 6rem;
-    background: var(--primary-color);
-    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
-    width: 220px;
-    height: 230px;
+    background: url('assets/images/pentagone.png') no-repeat center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 180px;
+    height: 190px;
 }
 
 .stat-item h3 {
@@ -375,3 +374,7 @@ html, body {
         margin-top: 2rem;
     }
 }
+
+
+
+
