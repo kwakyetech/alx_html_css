@@ -8,88 +8,72 @@
     <meta name="author" content="Prince Kwakye Ofori" />
     <meta name="robots" content="index, follow" />
     <meta name="description" content="A website dedicated to headphones, featuring reviews, comparisons, and buying guides." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="1-styles.css" />
     <link rel="stylesheet" href="assets/holberton_school-icon/style.css">
     <title>Headphone Enthusiast | Reviews, Comparisons & Buying Guides</title>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <div class="hamburger">&#9776;</div>
-            <a href="/" aria-label="Headphone Enthusiast Home">
-                <img src="assets/images/logo.svg" alt="Headphone Enthusiast logo" />
-            </a>
-        </div>
-        <nav role="navigation" aria-label="Main navigation">
-            <ul>
-                <li><a href="#what-we-do">What We Do</a></li>
-                <li><a href="#our-result">Our Result</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <main>
+            <section class="hero" aria-labelledby="hero-heading">
+            <header class="hero-banner" role="banner">
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                        <span class="holberton_school-icon-menu" aria-hidden="true"></span>
+                    </button>
+                    <a href="/" class="logo">
+                    <img src="assets/images/logo.svg" alt="Headphones company logo" />
+                    </a>
+                    <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main Navigation">
+                        <ul>
+                            <li><a href="#what-we-do">What we do</a></li>
+                            <li><a href="#our-results">Our results</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div>
+                    <h1 id="hero-heading">Lorem ipsum dolor set amet lorem ipsum</h1>
+                    <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+                    <a href="#what-we-do" class="cta-button" aria-label="Learn more">CALL TO ACTION</a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </section>
+            <section aria-labelledby="what-we-do" class="what-we-do">
+                <div>
+                    <h2 id="what-we-do">What We Do</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
 
-    <main>
-        <section class="hero" aria-labelledby="hero-heading">
-            <h1 id="hero-heading">Welcome to Headphone Enthusiast</h1>
-            <p>Your ultimate destination for headphone reviews.</p>
-            <a href="#what-we-do" class="cta-button" aria-label="Learn more">Learn More</a>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-        </section>
-        <section aria-labelledby="what-we-do" class="what-we-do">
-            <div>
-                <h2 id="what-we-do">What We Do</h2>
-                <p>
-                We provide in-depth reviews, comparisons, and buying guides to help you choose
-                the best headphones for your needs.
-                </p>
-            </div>
+                <div class="features">
+                    <article>
+                        <span class="holberton_school-icon-ic_sound"></span>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
 
-            <div class="features">
-                <article>
-                    <span class="holberton_school-icon-ic_sound"></span>
-                    <h3>Reviews</h3>
-                    <p>Detailed reviews of the latest headphones on the market.</p>
-                </article>
+                    <article>
+                        <span class="holberton_school-icon-ic_video"></span>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
 
-                <article>
-                    <span class="holberton_school-icon-ic_video"></span>
-                    <h3>Comparisons</h3>
-                    <p>Side-by-side comparisons of popular headphone models.</p>
-                </article>
+                    <article>
+                        <span class="holberton_school-icon-ic_music"></span>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
 
-                <article>
-                    <span class="holberton_school-icon-ic_music"></span>
-                    <h3>Buying Guides</h3>
-                    <p>Comprehensive buying guides to help you make informed decisions.</p>
-                </article>
-
-                <article>
-                    <span class="holberton_school-icon-ic_hearing"></span>
-                    <h3>Sound Testing</h3>
-                    <p>Explore how different headphones perform real-world audio scenarios.</p>
-                </article>
-            </div>
-        </section>
-    </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('nav ul');
-
-            hamburger.addEventListener('click', function() {
-                navMenu.classList.toggle('show');
-            });
-
-            // Close the menu when clicking outside of it
-            document.addEventListener('click', function(event) {
-                if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-                    navMenu.classList.remove('show');
-                }
-            });
-        });
-    </script>
-</body>
+                    <article>
+                        <span class="holberton_school-icon-ic_hearing"></span>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
